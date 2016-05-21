@@ -1,5 +1,6 @@
 #!/bin/bash
-hostname `uuidgen`
+hostname `uuidgen |cut -f 1 -d-`
 tar -C / -xf /usr/share/oem/serf.tgz
 systemctl daemon-reload
 systemctl start serf
+systemctl start nomad

@@ -1,0 +1,14 @@
+[Unit]
+Description=Nomad Agent
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/bin/nomad agent -client -data-dir=/tmp/client1 -servers 192.168.249.1
+KillSignal=SIGINT
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
