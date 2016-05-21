@@ -1,0 +1,7 @@
+{
+  "event_handlers": [
+    "handle.sh",
+    "query:run=/bin/sh"
+  ]
+}
+

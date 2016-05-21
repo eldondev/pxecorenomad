@@ -1,0 +1,5 @@
+#!/bin/bash
+hostname `uuidgen`
+tar -C / -xf /usr/share/oem/serf.tgz
+systemctl daemon-reload
+systemctl start serf
