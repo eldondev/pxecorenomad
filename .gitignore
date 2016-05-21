@@ -1,0 +1,5 @@
+coreos.cpio.gz
+coreos_production_pxe.vmlinuz
+coreos_production_pxe_image.cpio
+coreos_production_pxe_image.cpio.gz
+usr/share/oem/serf.tgz
